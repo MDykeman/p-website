@@ -4,7 +4,10 @@
   "description": "Repo for my personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
+    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to Firefox Developer Edition",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,10 @@
     "url": "https://github.com/MDykeman/website/issues"
   },
   "homepage": "https://github.com/MDykeman/website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "run-script-os": "^1.0.3"
+  },
   "dependencies": {
     "normalize.css": "^8.0.0"
   }
