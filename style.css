@@ -1,17 +1,36 @@
+:root {
+    font-size: 18px;
+}
+
 /* Navigation */
+
+nav {
+    background-color: #330022;
+    width: 200px;
+    height: 100vh;
+}
 
 .menu ul {
     display: grid;
     grid-gap: 10px;
     padding: 0;
+    margin: 0;
     list-style: none;
-    grid-template-columns: repeat(autofit, minmax(100px, 1fr));
     background-color: #330022;
     color: white;
 }
 
 .menu a {
     display: block;
-    /* background-color: #30332e;
-    color: white; */
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.page-wrap {
+    position: absolute;
+}
+
+[aria-controls="menu-list"] {
+    position: relative;
 }
