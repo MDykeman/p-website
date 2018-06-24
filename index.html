@@ -12,30 +12,26 @@
 
 <body>
 
-    <nav class="menu">
+<header>
+    <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+        <span class="sr-only">Open Main Menu</span>
+        <span aria-hidden="true">Menu</span>
+    </a>
+
+    <h1 class="logo">M</h1>
+    <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main Menu">
+        <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close Main Menu">
+            <span class="sr-only">Close main menu</span>
+            <span aria-hidden="true">Close</span>
+        </a>
         <ul>
-            <li>
-                <a href="#">Logo</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Work</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <div class="page-wrap">
-        <button aria-expanded="false" aria-controls="menu-list">
-            <span class="open">☰</span>
-            <span class="close">×</span>
-            Menu
-        </button>
-    </div>
-
+    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+</header>
 </body>
 
 </html>
