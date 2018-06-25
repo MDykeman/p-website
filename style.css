@@ -19,15 +19,16 @@
 
 .menu-toggle {
     display: inline-block;
-    padding: .75em 15px;
+    padding: .75em 20px;
     line-height: 1em;
     font-size: 1em;
     color: #333;
+    padding-top:5px
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-    color: #c00;
+    color: #48c2c5;
 }
 
 /* Navigation */
@@ -89,8 +90,10 @@
 
 header {
     padding: 20px;
-    display: flex;
-    align-items: baseline;
+    padding-left: 0;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 40px 1fr;
 }
 
 article {
@@ -103,6 +106,10 @@ article {
 article h2 {
     font-weight: 500;
     font-size: 1.5em;
+}
+
+.logo {
+    width: 10%;
 }
 
 /* On Small devices allow it to toggle */
