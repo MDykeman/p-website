@@ -6,33 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
 
-<header>
-    <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
-        <span class="sr-only">Open Main Menu</span>
-        <span class="fa fa-bars" aria-hidden="true"></span>
-    </a>
-
-    <img class="logo" src="m.svg" alt="logo">
-    <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main Menu">
-        <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close Main Menu">
-            <span class="sr-only">Close main menu</span>
-            <span class="fas fa-window-close" aria-hidden="true"></span>
+    <header>
+        <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
+            aria-label="Open main menu">
+            <span class="sr-only">Open Main Menu</span>
+            <span class="fa fa-bars" aria-hidden="true"></span>
         </a>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-</header>
+
+        <img class="logo" src="m.svg" alt="logo">
+        <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main Menu">
+            <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Close Main Menu">
+                <span class="sr-only">Close main menu</span>
+                <span class="fas fa-window-close" aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Work</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>
+
+    <div class="screen">
+        <div class="cube">
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top"></div>
+            <div class="side bottom"></div>
+            <div class="side front"></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
