@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <TITLE>cubeTransition.js</title>
+    <title>Matthew Dykeman's Portfolio Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -22,24 +22,15 @@
 
         <img class="logo" src="m.svg" alt="logo">
         <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main Menu">
-            <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
-                aria-label="Close Main Menu">
+            <a id="closeContent" href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false"
+                aria-controls="main-menu" aria-label="Close Main Menu">
                 <span class="sr-only">Close main menu</span>
                 <span class="fas fa-window-close" aria-hidden="true"></span>
             </a>
             <ul>
-                <!-- <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#">Work</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li> -->
             </ul>
         </nav>
-        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        <a id="backDrop" href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
     </header>
 
 
@@ -55,15 +46,57 @@
         </div>
     </div>
 
-    <ul id="bullets"></ul>
 
     </a>
     <script>
         function animationOut(i) {}
 
         function animationIn(i) {}
-        //well, you need modify the cubeTransition.js file
-        //delete the two functions if you dont need this kinda after/before swtching's animation.
+
+        // const menuToggle = document.querySelector("#main-menu-toggle");
+
+        function openContent(e) {
+            const type = e.type,
+                button = this,
+                content = document.querySelector(this.getAttribute('href'));
+            nav = document.querySelector("#main-menu");
+            console.log(this);
+            // Return if key Pressed was not space bar or Enter
+            if (type === 'keydown' && (e.keyCode !== 13 && e.keyCode !== 32)) {
+                return true;
+            }
+
+            e.preventDefault();
+
+            if (nav.getAttribute('aria-expanded') === 'false') {
+                nav.setAttribute('aria-expanded', 'true');
+            }
+
+        }
+
+        function closeContent(e) {
+            const type = e.type,
+                button = this,
+                content = document.querySelector(this.getAttribute('href'));
+            nav = document.querySelector("#main-menu");
+            console.log(this);
+            // Return if key Pressed was not space bar or Enter
+            if (type === 'keydown' && (e.keyCode !== 13 && e.keyCode !== 32)) {
+                return true;
+            }
+
+            e.preventDefault();
+
+            if (nav.getAttribute('aria-expanded') === 'true') {
+                nav.setAttribute('aria-expanded', 'false');
+            }
+
+        }
+
+        document.querySelector('#main-menu-toggle').addEventListener('click', openContent);
+
+        document.querySelector('#closeContent').addEventListener('click', closeContent);
+        document.querySelector('#backDrop').addEventListener('click', closeContent)
     </script>
     <script src='js/wheel-indicator.js'></script>
     <script src="js/jquery.touchSwipe.js"></script>
