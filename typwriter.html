@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .underline {
+            text-decoration: underline;
+            text-decoration-color: #d00000;
+        }
+
+        p {
+            font-size: 2rem;
+            width: 400px;
+            margin: 25% auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <span class="typewriter"></span>
+
+
+</body>
+
+<script>
+    const el = document.querySelector('.typewriter');
+    const actualString =
+        '<p><strong>Hi</strong> I\'m <span class="underline">Matthew Dykeman</span></p>';
+    const highlightColor = 'rgba(113, 170, 226, 0.76)';
+    const noHighlight = 'none;'
+
+    let stringBuilder = '';
+    let stringIdx = 0;
+
+    function addToString() {
+        setTimeout(() => {
+            if (stringBuilder.length < actualString.length) {
+                stringBuilder += actualString[stringIdx++];
+                el.textContent = stringBuilder;
+                // stringBuilder -> string being concatenated
+                addToString();
+            }
+            if (actualString.length === stringBuilder.length) {
+                el.innerHTML = stringBuilder
+            }
+
+        }, Math.random() * 200);
+
+    }
+    addToString();
+</script>
+
+</html>
