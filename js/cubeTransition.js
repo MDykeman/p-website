@@ -1,10 +1,17 @@
 +(function ($) {
 
+
 	var length = $('#cubeTransition>div').length,
 		current = 1,
 		next = 1,
 		outClass, inClass, onGoing = false;
 	$('#cubeTransition>div:eq(0)').addClass('visible');
+
+	// var length = $('#cubeTransition>.page').length,
+	// 	current = 1,
+	// 	next = 1,
+	// 	outClass, inClass, onGoing = false;
+	// $('#cubeTransition>.page:eq(0)').addClass('visible');
 
 	// for (i = 0; i < length; i++) {
 	// 	var bullet = $("<a >About</a>");

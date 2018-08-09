@@ -36,7 +36,16 @@
 
     <div id="cubeTransition">
         <div class="page1">
-            <h2>About</h2>
+
+            <div class="about-container">
+                <span class="typewriter"></span>
+
+                <p class="intro-paragraph">A web developer with a marketing background based in Toronto, Ontario. My marketing background has given
+                    me the desire to create Web-Apps that are simple and easy to use. Ultimately resulting in the best User-Experience
+                    possible!
+                </p>
+            </div>
+
         </div>
         <div class="page2">
             <h2>Work</h2>
@@ -49,6 +58,32 @@
 
     </a>
     <script>
+        const el = document.querySelector('.typewriter');
+        const actualString =
+            '<p><strong>Hi</strong> I\'m <span class="underline">Matthew Dykeman</span></p>';
+        const highlightColor = 'rgba(113, 170, 226, 0.76)';
+        const noHighlight = 'none;'
+
+        let stringBuilder = '';
+        let stringIdx = 0;
+
+        function addToString() {
+            setTimeout(() => {
+                if (stringBuilder.length < actualString.length) {
+                    stringBuilder += actualString[stringIdx++];
+                    el.textContent = stringBuilder;
+                    // stringBuilder -> string being concatenated
+                    addToString();
+                }
+                if (actualString.length === stringBuilder.length) {
+                    el.innerHTML = stringBuilder
+                }
+
+            }, Math.random() * 200);
+
+        }
+        addToString();
+
         function animationOut(i) {}
 
         function animationIn(i) {}

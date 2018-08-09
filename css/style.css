@@ -285,6 +285,41 @@ article h2 {
 	cursor: default;
 }
 
+.about-container {
+	width: 750px !important;
+	position: static !important;
+	margin: 0 auto;
+	margin-top: 3rem;
+	display: block !important;
+}
+
+.typewriter {
+	margin-top: 15rem;
+	margin-left: 3rem;
+	margin-bottom: 1rem;
+	font-family: 'Courier New', Courier, monospace;
+	width: 850px;
+	display: block;
+	font-size: 1rem;
+}
+
+.typewriter .underline {
+	text-decoration: underline;
+	text-decoration-color: #333333;
+}
+
+.typewriter p {
+	font-size: 2rem;
+	width: 550px;
+	margin-bottom: 1rem;
+}
+
+.intro-paragraph {
+	font-size: 2rem;
+	width: 750px;
+	margin-left: 3rem;
+}
+
 @supports (position: fixed) {
 	.main-menu,
 	.main-menu:target+.backdrop,
