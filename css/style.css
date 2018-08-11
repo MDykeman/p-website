@@ -34,7 +34,7 @@ body {
 
 #cubeTransition h2 {
 	position: relative;
-	top: 200px;
+	top: 20px;
 	margin: 0;
 	font-size: 1.5em;
 	text-align: center;
@@ -57,8 +57,83 @@ body {
 	background: #64b9d2;
 }
 
-.page4 {
+.slider-container {
+	display: block !important;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative !important;
+	width: 70% !important;
+	padding-bottom: 30%;
 	background: green;
+	border: solid 10px #2c2c2c;
+}
+
+.slide_img {
+	display: block !important;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.slide_img img {
+	display: block !important;
+	height: 100%;
+	width: 100%;
+}
+
+#i1,
+#i2,
+#i3 {
+	display: none;
+}
+
+.pre,
+.nxt {
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba( 88, 88, 88, 0.4);
+	z-index: 99;
+	cursor: pointer;
+}
+
+.pre {
+	left: 0;
+}
+
+.nxt {
+	right: 0;
+}
+
+/.nav {
+	width: 100%;
+	height: 11px;
+	bottom: 12%;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+}
+
+dots {
+	top: -5px;
+	width: 100%;
+	height: 100%;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	background: rgba(0, 0, 0, .4);
+}
+
+.slide_img {
+	z-index: -1;
+}
+
+#i1:checked~#one,
+#i2:checked~#two,
+#i3:checked~#three {
+	z-index: 9;
 }
 
 .rotateCubeTopOut {
