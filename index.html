@@ -37,55 +37,80 @@
     <div id="cubeTransition">
         <div class="page1">
 
-            <div class="about-container">
+            <section class="about-container">
                 <span class="typewriter"></span>
 
                 <p class="intro-paragraph">A web developer with a marketing background based in Toronto, Ontario. My marketing background has given
                     me the desire to create Web-Apps that are simple and easy to use. Ultimately resulting in the best User-Experience
                     possible!
                 </p>
-            </div>
+            </section>
 
         </div>
         <div class="page2">
 
-            <h2>Work</h2>
+
             <section class="slider-container">
-                <input type="radio" id="i1" name="images" checked />
-                <input type="radio" id="i2" name="images" />
-                <input type="radio" id="i3" name="images" />
-
-
-                <section class="slide_img" id="one">
-                    <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg" alt="">
-
-                    <label for="i3" class="pre"></label>
-                    <label for="i2" class="nxt"></label>
+                <section class="site-img">
+                    <img id="siteImg1" class="show" src="assets\img\fcpa-screenshot.png" alt="">
+                    <img id="siteImg2" class="hide" src="assets\img\ofa-screenshot.png" alt="">
+                    <img id="siteImg3" class="hide" src="assets\img\countdown-screenshot.png" alt="">
                 </section>
-                <section class="slide_img" id="two">
-                    <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg" alt="">
-
-                    <label for="i1" class="pre"></label>
-                    <label for="i3" class="nxt"></label>
+                <section class="btn prev">
+                    <a id="prev-btn" href="#">
+                        < Previous</a>
                 </section>
-                <section class="slide_img" id="three">
-                    <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg" alt="">
-
-                    <label for="i2" class="pre"></label>
-                    <label for="i1" class="nxt"></label>
+                <section class="btn next">
+                    <a id="next-btn" href="#">Next ></a>
                 </section>
 
-                <div class="nav">
-                    <label class="dots" id="dot1" for="i1"></label>
-                    <label class="dots" id="dot2" for="i2"></label>
-                    <label class="dots" id="dot3" for="i3"></label>
-                </div>
+                <section class="btn site-link">
+                    <a id="siteLnk1" class="show" target="_blank" href="https://www.americanconference.com/35th-international-conference-foreign-corrupt-practices-act/">Visit Site</a>
+                    <a id="siteLnk2" class="hide" target="_blank" href="http://ofa-america.com/">Visit Site</a>
+                    <a id="siteLnk3" class="hide" target="_blank" href="http://mattaboutwebdev.com/projectCountdown/home.html">Visit Site</a>
+                </section>
+
+                <section class="blurb">
+                    <section id="writeUp1" class="blurb-write-up show">
+                        FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA
+                        FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA
+                        FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA
+                        FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA
+                        FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA FCPA
+                        FCPA
+                    </section>
+
+                    <section id="writeUp2" class="blurb-write-up hide">
+                        OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA
+                        OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA
+                        OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA
+                        OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA
+                        OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA
+                        OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA OFA
+                    </section>
+
+                    <section id="writeUp3" class="blurb-write-up hide">
+                        Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown
+                        Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown
+                        Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown
+                        Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown
+                        Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown Countdown
+
+                    </section>
+                </section>
             </section>
 
 
         </div>
         <div class="page3">
-            <h2>Contact</h2>
+
+            <section class="contact-info">
+                <p>If you would like to work on creating your digital footprint give me a shout!</p>
+
+                <a href="mailto:mail@mattaboutwebdev.com">mail@mattaboutwebdev.com</a>
+
+                <a class="btn" href="">Download My Resume</a>
+            </section>
         </div>
     </div>
 
@@ -148,7 +173,6 @@
                 button = this,
                 content = document.querySelector(this.getAttribute('href'));
             nav = document.querySelector("#main-menu");
-            console.log(this);
             // Return if key Pressed was not space bar or Enter
             if (type === 'keydown' && (e.keyCode !== 13 && e.keyCode !== 32)) {
                 return true;
@@ -164,7 +188,215 @@
 
         document.querySelector('#main-menu-toggle').addEventListener('click', openContent);
         document.querySelector('#closeContent').addEventListener('click', closeContent);
-        document.querySelector('#backDrop').addEventListener('click', closeContent)
+        document.querySelector('#backDrop').addEventListener('click', closeContent);
+
+
+        const nextButton = document.querySelector(".next"),
+            prevButton = document.querySelector(".prev"),
+            siteImg1 = document.querySelector("#siteImg1"),
+            siteImg2 = document.querySelector("#siteImg2"),
+            siteImg3 = document.querySelector("#siteImg3"),
+            siteLnk1 = document.querySelector("#siteLnk1"),
+            siteLnk2 = document.querySelector("#siteLnk2"),
+            siteLnk3 = document.querySelector("#siteLnk3"),
+            writeUp1 = document.querySelector("#writeUp1"),
+            writeUp2 = document.querySelector("#writeUp2"),
+            writeUp3 = document.querySelector("#writeUp3");
+
+        let contentCount = 1;
+
+        document.querySelector(".next").addEventListener("click", contentPlus);
+        document.querySelector(".prev").addEventListener("click", contentMinus);
+
+        function contentPlus() {
+            if (contentCount > 3) {
+                contentCount = 1
+            }
+            contentCount++;
+            console.log(contentCount);
+            // return contentCount;
+            if (contentCount === 1) {
+                siteImg1.classList.add('show')
+                siteImg1.classList.remove('hide')
+                siteLnk1.classList.add('show')
+                siteLnk1.classList.remove('hide')
+                writeUp1.classList.add('show')
+                siteImg3.classList.remove('show')
+                siteLnk3.classList.remove('show')
+                writeUp3.classList.remove('show')
+                siteImg3.classList.add('hide')
+                siteLnk3.classList.add('hide')
+                writeUp3.classList.add('hide')
+            }
+            if (contentCount === 2) {
+                //adding second content
+                siteImg2.classList.add('show')
+                siteLnk2.classList.add('show')
+                writeUp2.classList.add('show')
+                siteImg2.classList.remove('hide')
+                siteLnk2.classList.remove('hide')
+                writeUp2.classList.remove('hide')
+                //removing first content
+                siteImg1.classList.remove('show')
+                siteLnk1.classList.remove('show')
+                writeUp1.classList.remove('show')
+                siteImg1.classList.add('hide')
+                siteLnk1.classList.add('hide')
+                writeUp1.classList.add('hide')
+                //removing third content
+                siteImg3.classList.remove('show')
+                siteLnk3.classList.remove('show')
+                writeUp3.classList.remove('show')
+                siteImg3.classList.add('hide')
+                siteLnk3.classList.add('hide')
+                writeUp3.classList.add('hide')
+            }
+            if (contentCount === 3) {
+                siteImg3.classList.add('show')
+                siteImg3.classList.remove('hide')
+                siteLnk3.classList.add('show')
+                siteLnk3.classList.remove('hide')
+                writeUp3.classList.add('show')
+                writeUp3.classList.remove('hide')
+                siteImg2.classList.remove('show')
+                siteLnk2.classList.remove('show')
+                writeUp2.classList.remove('show')
+                siteImg2.classList.add('hide')
+                siteLnk2.classList.add('hide')
+                writeUp2.classList.add('hide')
+            }
+            if (contentCount > 3) {
+                contentCount = 1
+            }
+
+        }
+
+        function contentMinus() {
+            contentCount--;
+            console.log(contentCount);
+            if (contentCount === 1) {
+                siteImg1.classList.add('show')
+                siteLnk1.classList.add('show')
+                writeUp1.classList.add('show')
+                siteImg1.classList.remove('hide')
+                siteLnk1.classList.remove('hide')
+                writeUp1.classList.remove('hide')
+                siteImg3.classList.remove('show')
+                siteLnk3.classList.remove('show')
+                writeUp3.classList.remove('show')
+                siteImg3.classList.add('hide')
+                siteLnk3.classList.add('hide')
+                writeUp3.classList.add('hide')
+                //adding second content
+                siteImg2.classList.remove('show')
+                siteLnk2.classList.remove('show')
+                writeUp2.classList.remove('show')
+                siteImg2.classList.add('hide')
+                siteLnk2.classList.add('hide')
+                writeUp2.classList.add('hide')
+            }
+            if (contentCount === 2) {
+                //adding second content
+                siteImg2.classList.add('show')
+                siteLnk2.classList.add('show')
+                writeUp2.classList.add('show')
+                siteImg2.classList.remove('hide')
+                siteLnk2.classList.remove('hide')
+                writeUp2.classList.remove('hide')
+                //removing first content
+                siteImg1.classList.remove('show')
+                siteLnk1.classList.remove('show')
+                writeUp1.classList.remove('show')
+                siteImg1.classList.add('hide')
+                siteLnk1.classList.add('hide')
+                writeUp1.classList.add('hide')
+                //removing third content
+                siteImg3.classList.remove('show')
+                siteLnk3.classList.remove('show')
+                writeUp3.classList.remove('show')
+                siteImg3.classList.add('hide')
+                siteLnk3.classList.add('hide')
+                writeUp3.classList.add('hide')
+            }
+            if (contentCount === 3) {
+                siteImg3.classList.add('show')
+                siteImg3.classList.remove('hide')
+                siteLnk3.classList.add('show')
+                siteLnk3.classList.remove('hide')
+                writeUp3.classList.add('show')
+                writeUp3.classList.remove('hide')
+                siteImg2.classList.remove('show')
+                siteLnk2.classList.remove('show')
+                writeUp2.classList.remove('show')
+                siteImg2.classList.add('hide')
+                siteLnk2.classList.add('hide')
+                writeUp2.classList.add('hide')
+            }
+            if (contentCount > 3) {
+                contentCount = 1
+            }
+            return contentCount;
+        }
+
+
+        // nextButton.onclick = function () {
+
+        //     contentCount + 1;
+
+
+
+
+
+        // prevButton.onclick = function () {
+
+        //     contentCount - 1;
+        //     // if (contentCount > 3) {
+        //     //     contentCount = 1
+        //     // }
+        //     if (contentCount = 1) {
+        //         siteImg1.classList.add('show');
+        //         siteImg1.classList.remove('hide');
+        //         siteLnk1.classList.add('show');
+        //         siteLnk1.classList.remove('hide');
+        //         writeUp1.classList.add('show');
+        //         siteImg3.classList.remove('show');
+        //         siteLnk3.classList.remove('show');
+        //         writeUp3.classList.remove('show');
+        //         siteImg3.classList.add('hide');
+        //         siteLnk3.classList.add('hide');
+        //         writeUp3.classList.add('hide');
+        //     }
+        //     if (contentCount = 2) {
+        //         siteImg2.classList.add('show');
+        //         siteImg2.classList.remove('hide');
+        //         siteLnk2.classList.add('show');
+        //         siteLnk2.classList.remove('hide');
+        //         writeUp2.classList.add('show');
+        //         siteImg1.classList.remove('show');
+        //         siteLnk1.classList.remove('show');
+        //         writeUp1.classList.remove('show');
+        //         siteImg1.classList.add('hide');
+        //         siteLnk1.classList.add('hide');
+        //         writeUp1.classList.add('hide');
+        //     }
+        //     if (contentCount = 3) {
+        //         siteImg3.classList.add('show');
+        //         siteImg3.classList.remove('hide');
+        //         siteLnk3.classList.add('show');
+        //         siteLnk3.classList.remove('hide');
+        //         writeUp3.classList.add('show');
+        //         siteImg2.classList.remove('show');
+        //         siteLnk2.classList.remove('show');
+        //         writeUp2.classList.remove('show');
+        //         siteImg2.classList.add('hide');
+        //         siteLnk2.classList.add('hide');
+        //         writeUp2.classList.add('hide');
+        //     }
+        //     if (contentCount < 1) {
+        //         contentCount = 1
+        //     }
+        //     console.log(contentCount);
+        // }
     </script>
     <script src='js/wheel-indicator.js'></script>
     <script src="js/jquery.touchSwipe.js"></script>
