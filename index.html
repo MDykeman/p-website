@@ -209,64 +209,60 @@
         document.querySelector(".prev").addEventListener("click", contentMinus);
 
         function contentPlus() {
-            if (contentCount > 3) {
-                contentCount = 1
-            }
+
             contentCount++;
             console.log(contentCount);
             // return contentCount;
             if (contentCount === 1) {
-                siteImg1.classList.add('show')
-                siteImg1.classList.remove('hide')
-                siteLnk1.classList.add('show')
-                siteLnk1.classList.remove('hide')
-                writeUp1.classList.add('show')
-                siteImg3.classList.remove('show')
-                siteLnk3.classList.remove('show')
-                writeUp3.classList.remove('show')
-                siteImg3.classList.add('hide')
-                siteLnk3.classList.add('hide')
-                writeUp3.classList.add('hide')
-            }
-            if (contentCount === 2) {
+                siteImg1.classList.add('show');
+                siteLnk1.classList.add('show');
+                writeUp1.classList.add('show');
+                siteImg1.classList.remove('hide');
+                siteLnk1.classList.remove('hide');
+                writeUp1.classList.remove('hide');
+                siteImg3.classList.remove('show');
+                siteLnk3.classList.remove('show');
+                writeUp3.classList.remove('show');
+                siteImg3.classList.add('hide');
+                siteLnk3.classList.add('hide');
+                writeUp3.classList.add('hide');
+            } else if (contentCount === 2) {
                 //adding second content
-                siteImg2.classList.add('show')
-                siteLnk2.classList.add('show')
-                writeUp2.classList.add('show')
-                siteImg2.classList.remove('hide')
-                siteLnk2.classList.remove('hide')
-                writeUp2.classList.remove('hide')
+                siteImg2.classList.add('show');
+                siteLnk2.classList.add('show');
+                writeUp2.classList.add('show');
+                siteImg2.classList.remove('hide');
+                siteLnk2.classList.remove('hide');
+                writeUp2.classList.remove('hide');
                 //removing first content
-                siteImg1.classList.remove('show')
-                siteLnk1.classList.remove('show')
-                writeUp1.classList.remove('show')
-                siteImg1.classList.add('hide')
-                siteLnk1.classList.add('hide')
-                writeUp1.classList.add('hide')
+                siteImg1.classList.remove('show');
+                siteLnk1.classList.remove('show');
+                writeUp1.classList.remove('show');
+                siteImg1.classList.add('hide');
+                siteLnk1.classList.add('hide');
+                writeUp1.classList.add('hide');
                 //removing third content
-                siteImg3.classList.remove('show')
-                siteLnk3.classList.remove('show')
-                writeUp3.classList.remove('show')
-                siteImg3.classList.add('hide')
-                siteLnk3.classList.add('hide')
-                writeUp3.classList.add('hide')
-            }
-            if (contentCount === 3) {
-                siteImg3.classList.add('show')
-                siteImg3.classList.remove('hide')
-                siteLnk3.classList.add('show')
-                siteLnk3.classList.remove('hide')
-                writeUp3.classList.add('show')
-                writeUp3.classList.remove('hide')
-                siteImg2.classList.remove('show')
-                siteLnk2.classList.remove('show')
-                writeUp2.classList.remove('show')
-                siteImg2.classList.add('hide')
-                siteLnk2.classList.add('hide')
-                writeUp2.classList.add('hide')
-            }
-            if (contentCount > 3) {
-                contentCount = 1
+                siteImg3.classList.remove('show');
+                siteLnk3.classList.remove('show');
+                writeUp3.classList.remove('show');
+                siteImg3.classList.add('hide');
+                siteLnk3.classList.add('hide');
+                writeUp3.classList.add('hide');
+            } else if (contentCount === 3) {
+                siteImg3.classList.add('show');
+                siteLnk3.classList.add('show');
+                writeUp3.classList.add('show');
+                siteImg3.classList.remove('hide');
+                siteLnk3.classList.remove('hide');
+                writeUp3.classList.remove('hide');
+                siteImg2.classList.remove('show');
+                siteLnk2.classList.remove('show');
+                writeUp2.classList.remove('show');
+                siteImg2.classList.add('hide');
+                siteLnk2.classList.add('hide');
+                writeUp2.classList.add('hide');
+            } else {
+                contentCount = 3;
             }
 
         }
@@ -275,64 +271,61 @@
             contentCount--;
             console.log(contentCount);
             if (contentCount === 1) {
-                siteImg1.classList.add('show')
-                siteLnk1.classList.add('show')
-                writeUp1.classList.add('show')
-                siteImg1.classList.remove('hide')
-                siteLnk1.classList.remove('hide')
-                writeUp1.classList.remove('hide')
-                siteImg3.classList.remove('show')
-                siteLnk3.classList.remove('show')
-                writeUp3.classList.remove('show')
-                siteImg3.classList.add('hide')
-                siteLnk3.classList.add('hide')
-                writeUp3.classList.add('hide')
+                siteImg1.classList.add('show');
+                siteLnk1.classList.add('show');
+                writeUp1.classList.add('show');
+                siteImg1.classList.remove('hide');
+                siteLnk1.classList.remove('hide');
+                writeUp1.classList.remove('hide');
+                siteImg3.classList.remove('show');
+                siteLnk3.classList.remove('show');
+                writeUp3.classList.remove('show');
+                siteImg3.classList.add('hide');
+                siteLnk3.classList.add('hide');
+                writeUp3.classList.add('hide');
                 //adding second content
-                siteImg2.classList.remove('show')
-                siteLnk2.classList.remove('show')
-                writeUp2.classList.remove('show')
-                siteImg2.classList.add('hide')
-                siteLnk2.classList.add('hide')
-                writeUp2.classList.add('hide')
-            }
-            if (contentCount === 2) {
+                siteImg2.classList.remove('show');
+                siteLnk2.classList.remove('show');
+                writeUp2.classList.remove('show');
+                siteImg2.classList.add('hide');
+                siteLnk2.classList.add('hide');
+                writeUp2.classList.add('hide');
+            } else if (contentCount === 2) {
                 //adding second content
-                siteImg2.classList.add('show')
-                siteLnk2.classList.add('show')
-                writeUp2.classList.add('show')
-                siteImg2.classList.remove('hide')
-                siteLnk2.classList.remove('hide')
-                writeUp2.classList.remove('hide')
+                siteImg2.classList.add('show');
+                siteLnk2.classList.add('show');
+                writeUp2.classList.add('show');
+                siteImg2.classList.remove('hide');
+                siteLnk2.classList.remove('hide');
+                writeUp2.classList.remove('hide');
                 //removing first content
-                siteImg1.classList.remove('show')
-                siteLnk1.classList.remove('show')
-                writeUp1.classList.remove('show')
-                siteImg1.classList.add('hide')
-                siteLnk1.classList.add('hide')
-                writeUp1.classList.add('hide')
+                siteImg1.classList.remove('show');
+                siteLnk1.classList.remove('show');
+                writeUp1.classList.remove('show');
+                siteImg1.classList.add('hide');
+                siteLnk1.classList.add('hide');
+                writeUp1.classList.add('hide');
                 //removing third content
-                siteImg3.classList.remove('show')
-                siteLnk3.classList.remove('show')
-                writeUp3.classList.remove('show')
-                siteImg3.classList.add('hide')
-                siteLnk3.classList.add('hide')
-                writeUp3.classList.add('hide')
-            }
-            if (contentCount === 3) {
-                siteImg3.classList.add('show')
-                siteImg3.classList.remove('hide')
-                siteLnk3.classList.add('show')
-                siteLnk3.classList.remove('hide')
-                writeUp3.classList.add('show')
-                writeUp3.classList.remove('hide')
-                siteImg2.classList.remove('show')
-                siteLnk2.classList.remove('show')
-                writeUp2.classList.remove('show')
-                siteImg2.classList.add('hide')
-                siteLnk2.classList.add('hide')
-                writeUp2.classList.add('hide')
-            }
-            if (contentCount > 3) {
+                siteImg3.classList.remove('show');
+                siteLnk3.classList.remove('show');
+                writeUp3.classList.remove('show');
+                siteImg3.classList.add('hide');
+                siteLnk3.classList.add('hide');
+                writeUp3.classList.add('hide');
+            } else if (contentCount === 3) {
+                siteImg3.classList.add('show');
+                siteImg3.classList.remove('hide');
+                siteLnk3.classList.add('show');
+                siteLnk3.classList.remove('hide');
+                writeUp3.classList.add('show');
+                writeUp3.classList.remove('hide');
+                siteImg2.classList.remove('show');
+                siteLnk2.classList.remove('show');
+                writeUp2.classList.remove('show');
+                siteImg2.classList.add('hide');
+                siteLnk2.classList.add('hide');
+                writeUp2.classList.add('hide');
+            } else {
                 contentCount = 1
             }
             return contentCount;
