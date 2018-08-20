@@ -134,8 +134,7 @@ a {
 	border-top: 2px white solid;
 	border-bottom: 2px white solid;
 	padding: .5rem 0;
-	font-size:1.2rem;
-
+	font-size: 1.2rem;
 }
 
 .blurb-write-up .blurb-body {
@@ -154,6 +153,11 @@ a {
 .contact-info a {
 	margin-top: 100px;
 	display: block;
+}
+
+.contact-info .btn {
+	max-width: 350px;
+	margin: 100px auto;
 }
 
 .rotateCubeTopOut {
@@ -356,7 +360,7 @@ article h2 {
 
 .main-menu:target .menu-close,
 .main-menu[aria-expanded="true"] .menu-close {
-	z-index: 10001;
+	z-index: 1001;
 }
 
 .main-menu:target ul,
@@ -476,13 +480,14 @@ article h2 {
 		padding-top: 10px;
 		grid-gap: 10px;
 	}
-
 	.blurb-write-up {
 		grid-template-areas: "title blurb blurb" "title blurb blurb" "title blurb blurb";
 	}
-
-	.blurb-write-up .blurb-body {
+	.blurb-write-up .title {
 		font-size: 1rem;
+	}
+	.blurb-write-up .blurb-body {
+		font-size: .7rem;
 	}
 	.btn {
 		font-size: .7rem;
