@@ -51,7 +51,7 @@ a {
 }
 
 .page1 {
-	background: #BADA55;
+	background: #89b32f;
 }
 
 .page2 {
@@ -99,7 +99,7 @@ a {
 	justify-items: center;
 	align-content: center;
 	padding: 10px 0;
-	border: 3px solid #2c2c2c;
+	border: 2px solid #2c2c2c;
 }
 
 .slide-change-btn a {
@@ -117,7 +117,7 @@ a {
 
 .site-link {
 	grid-area: link;
-	border: #2c2c2c solid 3px;
+	border: #2c2c2c solid 2px;
 	border-right: 0;
 	border-left: 0;
 }
@@ -131,8 +131,8 @@ a {
 .title {
 	grid-area: title;
 	text-align: center;
-	border-top: 3px white solid;
-	border-bottom: 3px white solid;
+	border-top: 2px white solid;
+	border-bottom: 2px white solid;
 	padding: .5rem 0;
 	font-size:1.2rem;
 
