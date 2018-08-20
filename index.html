@@ -73,18 +73,21 @@
                 <section class="blurb">
                     <section id="writeUp1" class="blurb-write-up show">
                         <p class="title">Foreign Corrupt Practices Act Website</p>
-                        <p class="blurb-body">A website created for the largest Foreign Corruption legal conference in the world. Created using a heavily customized WordPress theme for the C5 Group Inc.</p>
+                        <p class="blurb-body">A website created for the largest Foreign Corruption legal conference in the world. Created using
+                            a heavily customized WordPress theme for the C5 Group Inc.</p>
                     </section>
 
                     <section id="writeUp2" class="blurb-write-up hide">
-                            <p class="title">Operations for Alternatives Website</p>
-                        <p class="blurb-body">A miami legal conference website for law makers from around the world build using a modified KeyNote theme.
+                        <p class="title">Operations for Alternatives Website</p>
+                        <p class="blurb-body">A miami legal conference website for law makers from around the world build using a modified KeyNote
+                            theme.
                         </p>
                     </section>
 
                     <section id="writeUp3" class="blurb-write-up hide">
-                            <p class="title">Christmas Countdown Website</p>
-                        <p class="blurb-body">A website created counting down the time until Christmas using a javascript countdown and HTML 5 Canvas to provide a snowfall effect.
+                        <p class="title">Christmas Countdown Website</p>
+                        <p class="blurb-body">A website created counting down the time until Christmas using a javascript countdown and HTML 5
+                            Canvas to provide a snowfall effect.
                         </p>
 
                     </section>
@@ -138,7 +141,6 @@
 
         function animationIn(i) {}
 
-        // const menuToggle = document.querySelector("#main-menu-toggle");
 
         function openContent(e) {
             const type = e.type,
@@ -202,8 +204,6 @@
         function contentPlus() {
 
             contentCount++;
-            console.log(contentCount);
-            // return contentCount;
             if (contentCount === 1) {
                 siteImg1.classList.add('show');
                 siteLnk1.classList.add('show');
@@ -260,7 +260,6 @@
 
         function contentMinus() {
             contentCount--;
-            console.log(contentCount);
             if (contentCount === 1) {
                 siteImg1.classList.add('show');
                 siteLnk1.classList.add('show');
@@ -321,66 +320,6 @@
             }
             return contentCount;
         }
-
-
-        // nextButton.onclick = function () {
-
-        //     contentCount + 1;
-
-
-
-
-
-        // prevButton.onclick = function () {
-
-        //     contentCount - 1;
-        //     // if (contentCount > 3) {
-        //     //     contentCount = 1
-        //     // }
-        //     if (contentCount = 1) {
-        //         siteImg1.classList.add('show');
-        //         siteImg1.classList.remove('hide');
-        //         siteLnk1.classList.add('show');
-        //         siteLnk1.classList.remove('hide');
-        //         writeUp1.classList.add('show');
-        //         siteImg3.classList.remove('show');
-        //         siteLnk3.classList.remove('show');
-        //         writeUp3.classList.remove('show');
-        //         siteImg3.classList.add('hide');
-        //         siteLnk3.classList.add('hide');
-        //         writeUp3.classList.add('hide');
-        //     }
-        //     if (contentCount = 2) {
-        //         siteImg2.classList.add('show');
-        //         siteImg2.classList.remove('hide');
-        //         siteLnk2.classList.add('show');
-        //         siteLnk2.classList.remove('hide');
-        //         writeUp2.classList.add('show');
-        //         siteImg1.classList.remove('show');
-        //         siteLnk1.classList.remove('show');
-        //         writeUp1.classList.remove('show');
-        //         siteImg1.classList.add('hide');
-        //         siteLnk1.classList.add('hide');
-        //         writeUp1.classList.add('hide');
-        //     }
-        //     if (contentCount = 3) {
-        //         siteImg3.classList.add('show');
-        //         siteImg3.classList.remove('hide');
-        //         siteLnk3.classList.add('show');
-        //         siteLnk3.classList.remove('hide');
-        //         writeUp3.classList.add('show');
-        //         siteImg2.classList.remove('show');
-        //         siteLnk2.classList.remove('show');
-        //         writeUp2.classList.remove('show');
-        //         siteImg2.classList.add('hide');
-        //         siteLnk2.classList.add('hide');
-        //         writeUp2.classList.add('hide');
-        //     }
-        //     if (contentCount < 1) {
-        //         contentCount = 1
-        //     }
-        //     console.log(contentCount);
-        // }
     </script>
     <script src='js/wheel-indicator.js'></script>
     <script src="js/jquery.touchSwipe.js"></script>
