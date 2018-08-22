@@ -85,11 +85,9 @@ const el = document.querySelector('.typewriter');
 
         let contentCount = 1;
 
-        document.querySelector(".next").addEventListener("click", contentPlus);
-        document.querySelector(".prev").addEventListener("click", contentMinus);
 
-        function contentPlus() {
-
+        function contentPlus(e) {
+            e.preventDefault();
             contentCount++;
             if (contentCount === 1) {
                 siteImg1.classList.add('show');
@@ -145,7 +143,8 @@ const el = document.querySelector('.typewriter');
 
         }
 
-        function contentMinus() {
+        function contentMinus(e) {
+            e.preventDefault();
             contentCount--;
             if (contentCount === 1) {
                 siteImg1.classList.add('show');
@@ -207,3 +206,6 @@ const el = document.querySelector('.typewriter');
             }
             return contentCount;
         }
+
+        document.querySelector(".next").addEventListener("click", contentPlus);
+        document.querySelector(".prev").addEventListener("click", contentMinus);
