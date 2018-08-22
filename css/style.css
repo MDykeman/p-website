@@ -386,9 +386,8 @@ article h2 {
 
 .about-container {
 	width: 80% !important;
-	/* position: static !important; */
 	margin: 0 auto;
-	margin-top: 3rem;
+	margin-top: 30%;
 	display: block !important;
 }
 
@@ -466,6 +465,7 @@ article h2 {
 		text-align: left;
 	}
 	.about-container .typewriter {
+		font-size: 1rem;
 		margin-top: 1rem;
 		margin-left: .7rem;
 		margin-right: .7rem;
