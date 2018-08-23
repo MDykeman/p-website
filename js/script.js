@@ -34,7 +34,6 @@ const el = document.querySelector('.typewriter');
                 button = this,
                 content = document.querySelector(this.getAttribute('href'));
             nav = document.querySelector("#main-menu");
-            console.log(this);
             // Return if key Pressed was not space bar or Enter
             if (type === 'keydown' && (e.keyCode !== 13 && e.keyCode !== 32)) {
                 return true;
