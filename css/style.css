@@ -387,7 +387,7 @@ article h2 {
 .about-container {
 	width: 80% !important;
 	margin: 0 auto;
-	margin-top: 30%;
+	margin-top: 3rem;
 	display: block !important;
 }
 
@@ -461,7 +461,6 @@ article h2 {
 	.about-container {
 		width: 80% !important;
 		margin: 0 auto;
-		margin-top: 30%;
 		font-size: 1rem;
 		text-align: left;
 	}

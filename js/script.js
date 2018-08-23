@@ -19,7 +19,7 @@ const el = document.querySelector('.typewriter');
                     el.innerHTML = stringBuilder
                 }
 
-            }, Math.random() * 200);
+            }, Math.random() * 150);
 
         }
         addToString();
