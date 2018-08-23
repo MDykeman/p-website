@@ -481,7 +481,7 @@ article h2 {
 	}
 
 	a#backDrop.backdrop {
-		display: none;
+		background: rgba(0, 0, 0, 0);
 	}
 
 	.logo {
