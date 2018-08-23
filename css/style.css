@@ -312,6 +312,7 @@ img.close-icon:hover {
 
 .main-menu a {
 	display: block;
+	cursor: pointer;
 	padding: .75em 15px;
 	line-height: 1em;
 	font-size: 1em;
@@ -477,6 +478,10 @@ article h2 {
 		padding: 1.9rem 0 0;
 		font-size: .8rem;
 		width: 150px;
+	}
+
+	a#backDrop.backdrop {
+		display: none;
 	}
 
 	.logo {
