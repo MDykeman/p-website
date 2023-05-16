@@ -16,7 +16,7 @@
 		if (i == 0) bullet = $("<li><a href='#about' >About</a></li>");
 		if (i == 0) bullet.addClass('active');
 		if (i == 1) bullet = $("<li><a href='#work' >Work</a></li>");
-		if (i == 2) bullet = $("<li><a href='#contact' >Contact</a></li>");
+		if (i == 2) bullet = $("<li><a href='#contact'>Contact</a></li>");
 		$("#main-menu>ul").append(bullet);
 	}
 
